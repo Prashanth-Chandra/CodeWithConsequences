@@ -29,12 +29,16 @@ function update(value) {
 }
   
 function updateColor() {
-  var redValue = document.getElementById("red-slider").value;
-  var greenValue = document.getElementById("green-slider").value;
-  var blueValue = document.getElementById("blue-slider").value;
+  var redValue = document.getElementById("redSlider").value;
+  var greenValue = document.getElementById("greenSlider").value;
+  var blueValue = document.getElementById("blueSlider").value;
+  console.log(redValue+" "+greenValue);
   var colorString = "rgb(" + redValue + "," + greenValue + "," + blueValue + ")";
-
-  // Todo: Update the text color
-
+  
+  document.getElementById("work").style.color = colorString;
+  document.getElementById("life").style.color = colorString;
+  document.getElementById("balance").style.color = colorString;
+  document.querySelector('.cursor__follower').style.backgroundColor = colorString;
+  document.querySelector('.cursor__follower:after').style.backgroundColor = 'rgb(' + (255 - redValue) + ',' + (255 - greenValue) + ',' + (255 - blueValue) + ')';
 }
   
