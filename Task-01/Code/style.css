@@ -1,0 +1,90 @@
+/*Todo: import Merienda font from Google Font with 500 font weight  */
+/*Todo: import Arvo font from Google Font with 400 and 700 font weight (Note: Google Fonts allow importing multiple font weights, find how :) )*/
+
+/*Todo: make the page responsive by fixing the css where ever necessary*/
+body {
+    margin: 0;
+    height: 100vh;
+    /*Todo: center all the contend using appropriate properties */
+    background-color: #f5f5f5;
+}
+.card {
+    background: #fff;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    display: flex;
+    width: 40%;
+    height: 60%;
+    border: #414141 9px solid;
+    flex-direction: row;
+    border-radius: 30px;
+    /*Todo: css required to make the image-avatar div floating */
+}
+.card .title {
+    font-family: 'Arvo', serif;
+    padding: 1rem;
+    text-align: right;
+    color: rgb(39 39 42);
+    font-size: 14px;
+}
+.card .desc {
+    font-family: 'Merienda', cursive;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #666666;
+}
+.card .actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.card svg {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.img-avatar {
+    width: 180px;
+    height: 180px;
+    /*Todo: position this div to overlay the card */
+    border-radius: 50%;
+    border: 6px solid white;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    top: 45px;     /*Todo: can we make it responsive ? */
+    left: 170px;   /*Todo: can we make it responsive ? */
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+    padding: 14.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+    fill: white;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: bottom center;
+    background-size: cover;
+    background-color: #000000;
+    /*Todo: apply a background gradient at 315deg from color #000000 0% to #414141 74% (Or play around with more css )*/
+}
+
+.name {
+    font-family: 'Arvo', serif;
+    font-size: 4.5em;
+    font-weight: bold;
+    color: rgb(55 65 81);
+    margin: 0;
+}
+
+/* re assholes what is the progress? */
